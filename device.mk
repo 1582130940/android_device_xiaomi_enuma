@@ -19,8 +19,8 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2880
-TARGET_SCREEN_WIDTH := 1800
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1600
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -38,10 +38,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    init.device.rc
-
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -54,4 +50,4 @@ PRODUCT_PACKAGES += \
     TargetWifiOverlay
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/pipa/pipa-vendor.mk)
+$(call inherit-product, vendor/xiaomi/enuma/enuma-vendor.mk)

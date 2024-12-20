@@ -7,7 +7,7 @@
 # Inherit from sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/pipa
+DEVICE_PATH := device/xiaomi/enuma
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -15,16 +15,14 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Display
-TARGET_SCREEN_DENSITY := 400
+TARGET_SCREEN_DENSITY := 360
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/pipa.config
+TARGET_KERNEL_CONFIG += vendor/xiaomi/enuma.config
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Wi-Fi
-SOONG_CONFIG_XIAOMI_KONA_WIFI_SYMLINK_VERSION := v2
 
 # Inherit from the proprietary version
-include vendor/xiaomi/pipa/BoardConfigVendor.mk
+include vendor/xiaomi/enuma/BoardConfigVendor.mk

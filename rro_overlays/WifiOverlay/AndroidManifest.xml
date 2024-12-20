@@ -13,9 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Xiaomi Pad 6 specific wifi overlays -->
+<!-- Xiaomi Pad 5 Pro 5G specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.resources.pipa"
+    package="com.android.wifi.resources.enuma"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
